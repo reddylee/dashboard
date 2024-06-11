@@ -1,0 +1,34 @@
+---
+title: "Today's Top Stories"
+format: 
+  dashboard:
+    logo: fig/candoso.png
+    orientation: columns
+---
+
+## column {width="35%"}
+
+Placeholder text for the left column.
+
+```{r}
+#| label: setup
+#| echo: false
+#| include: false
+
+library(tidyverse)
+```
+
+```{r}
+#| label: packages
+head(starwars)
+```
+
+## column {width="65%"}
+
+### Row {height="10%"}
+
+Placeholder text for the top row, column 2.
+
+#### Row {height="70%"}
+
+#### Row {height="20%"}
