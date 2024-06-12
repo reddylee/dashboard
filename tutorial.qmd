@@ -1,0 +1,65 @@
+---
+title: My Dashboard
+format: 
+  dashboard:
+    logo: fig/candoso.png
+    orientation: columns
+    nav-buttons:
+      - twitter
+      - github
+---
+
+# Page 1
+
+## Row
+
+Here is some content.
+
+```{r}
+#| component: valuebox
+
+list(
+  title="Value Box",
+  value=123,
+  color="blue",
+  icon="fa-car"
+)
+```
+
+```{r}
+#| component: valuebox
+
+list(
+  title="Value Box",
+  value=23,
+  color="purple",
+  icon="envelope"
+)
+```
+
+```{r}
+#| component: valuebox
+
+list(
+  title="Value Box",
+  value=23,
+  color="skyblue",
+  icon="envelope"
+)
+```
+
+# Page 2
+
+## Row
+
+### Column {.tabset}
+
+```{r}
+#| title: Cars Plot
+plot(cars)
+```
+
+```{r}
+#| title: Mtcars Plot
+plot(mtcars)
+```
